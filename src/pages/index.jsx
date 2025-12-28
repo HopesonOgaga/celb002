@@ -6,31 +6,83 @@ function HomePage() {
     <section className="min-h-screen bg-black text-white relative overflow-hidden">
       <HeaderNav />
 
-      {/* Hero */}
-      <section className="min-h-screen flex items-center justify-center text-center px-6">
-        <div className="max-w-3xl">
-          {/* Artist name */}
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight mb-4">
-          lET'S  NEKO
+      {/* HERO */}
+      <section className="min-h-screen flex items-center justify-center px-6">
+        <div className="max-w-4xl text-center flex flex-col items-center">
+          <h1 className="text-5xl md:text-8xl font-semibold tracking-tight mb-6">
+            Let’s Neko
           </h1>
 
-          {/* Tagline */}
-          <p className="text-lg md:text-xl text-gray-300 mb-8">
-            Texas born sound. Global spirit. Music beyond borders.
+          <p className="text-base md:text-xl text-gray-400 max-w-2xl mb-10">
+            A curated portfolio platform showcasing musicians and creatives
+            shaping Texas culture and global influence.
           </p>
 
-          {/* CTA buttons */}
-          <div className="flex items-center justify-center gap-4">
-            <button className="px-6 py-3 bg-white text-black font-medium rounded-full hover:opacity-90 transition cursor-pointer ">
-              Explore Neko
-            </button>
+          <button className="px-8 py-3 rounded-full bg-white text-black font-medium hover:scale-105 transition cursor-pointer">
+            Explore Portfolio
+          </button>
+
+          {/* Scroll indicator */}
+          <div className="mt-10 flex flex-col items-center text-xs text-gray-500">
+            <span className="mb-2 tracking-widest uppercase">Scroll</span>
+            <div className="w-px h-12 bg-gray-500/60 animate-pulse"></div>
           </div>
         </div>
+      </section>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center text-sm text-gray-400">
-          <span className="mb-2">Scroll</span>
-          <div className="w-[1px] h-10 bg-gray-400 animate-pulse"></div>
+      {/* ABOUT / PLATFORM */}
+      <section className="min-h-screen flex items-center px-6 md:px-24">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 w-full">
+          {/* TEXT */}
+          <div className="flex flex-col justify-center">
+            <span className="text-xs uppercase tracking-[0.3em] text-gray-500 mb-6">
+              Texas Talent Portfolio
+            </span>
+
+            <h2 className="text-4xl md:text-6xl font-semibold leading-tight mb-8">
+              Curating artists
+              <br />
+              that define the moment.
+            </h2>
+
+            <p className="text-gray-400 text-lg leading-relaxed max-w-xl mb-10">
+              Let’s Neko is a modern portfolio and management platform focused
+              on visibility, identity, and growth. We spotlight artists with
+              clear vision and cultural relevance, connecting talent to
+              meaningful opportunities across media and industry.
+            </p>
+
+            <button className="w-fit px-7 py-3 rounded-full border border-white/30 hover:bg-white hover:text-black transition">
+              View Roster
+            </button>
+          </div>
+
+          {/* VISUAL COLLAGE */}
+          <div className="relative grid grid-cols-2 gap-5">
+            <img
+              src="/images/austin.jpg"
+              alt="Artist portrait"
+              className="h-64 w-full object-cover rounded-2xl"
+            />
+            <img
+              src="/images/erik.jpg"
+              alt="Live performance"
+              className="h-80 w-full object-cover rounded-2xl translate-y-10"
+            />
+            <img
+              src="/images/melanie.jpg"
+              alt="Studio session"
+              className="h-72 w-full object-cover rounded-2xl"
+            />
+            <img
+              src="/images/travis.jpg"
+              alt="On stage"
+              className="h-60 w-full object-cover rounded-2xl translate-y-14"
+            />
+
+            {/* Ambient glow */}
+            <div className="absolute inset-0 bg-white/5 blur-3xl rounded-full -z-10"></div>
+          </div>
         </div>
       </section>
     </section>
