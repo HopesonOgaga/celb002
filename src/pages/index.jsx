@@ -3,7 +3,6 @@ import HeaderNav from "../constant/nav";
 import Footer from "../constant/footer";
 import CelebritySection from "../constant/celeb";
 
-
 function HomePage() {
   return (
     <section className="min-h-screen bg-black text-white relative overflow-hidden">
@@ -48,7 +47,10 @@ function HomePage() {
       </section>
 
       {/* ABOUT / PLATFORM */}
-      <section className="min-h-screen flex items-center px-6 md:px-24">
+      <section
+        id="about"
+        className="min-h-screen flex items-center px-6 md:px-24"
+      >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 w-full">
           {/* TEXT */}
           <div className="flex flex-col justify-center">
@@ -148,7 +150,9 @@ function HomePage() {
         </div>
       </section>
       {/* celebrity section */}
-      <CelebritySection></CelebritySection>
+      <section id="service">
+        <CelebritySection></CelebritySection>
+      </section>
 
       <Footer></Footer>
     </section>

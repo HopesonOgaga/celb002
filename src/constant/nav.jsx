@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function HeaderNav() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -8,18 +9,30 @@ export default function HeaderNav() {
       <div className="max-w-7xl mx-auto flex justify-between items-center p-4">
         {/* Logo */}
         <div>
-          <h1 className="font-bold text-2xl text-gray-800">Neko Art</h1>
+          <Link href="/">
+            {" "}
+            <h1 className="font-bold text-2xl text-gray-800">Neko Art</h1>
+          </Link>
         </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-8">
-          <a href="#about" className="text-gray-700 hover:text-gray-600 transition">
+          <a
+            href="#about"
+            className="text-gray-700 hover:text-gray-600 transition"
+          >
             About
           </a>
-          <a href="#portfolio" className="text-gray-700 hover:text-gray-600 transition">
+          {/* <a
+            href="#portfolio"
+            className="text-gray-700 hover:text-gray-600 transition"
+          >
             Portfolio
-          </a>
-          <a href="#services" className="text-gray-700 hover:text-gray-600 transition">
+          </a> */}
+          <a
+            href="#service"
+            className="text-gray-700 hover:text-gray-600 transition"
+          >
             Services
           </a>
         </nav>
@@ -38,12 +51,32 @@ export default function HeaderNav() {
             className="text-gray-800 focus:outline-none"
           >
             {menuOpen ? (
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
             ) : (
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
               </svg>
             )}
           </button>
@@ -57,13 +90,22 @@ export default function HeaderNav() {
         }`}
       >
         <nav className="flex flex-col gap-4 p-4 bg-white">
-          <a href="#about" className="text-gray-700 hover:text-gray-600 transition">
+          <a
+            href="#about"
+            className="text-gray-700 hover:text-gray-600 transition"
+          >
             About
           </a>
-          <a href="#portfolio" className="text-gray-700 hover:text-gray-600 transition">
+          {/* <a
+            href="#portfolio"
+            className="text-gray-700 hover:text-gray-600 transition"
+          >
             Portfolio
-          </a>
-          <a href="#services" className="text-gray-700 hover:text-gray-600 transition">
+          </a> */}
+          <a
+            href="#service"
+            className="text-gray-700 hover:text-gray-600 transition"
+          >
             Services
           </a>
           <button className="bg-gray-600 text-white font-semibold rounded-full px-6 py-2 shadow-lg hover:bg-gray-900 active:bg-gray-950 transition">
