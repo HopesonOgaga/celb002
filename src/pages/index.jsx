@@ -1,5 +1,6 @@
 import React from "react";
 import HeaderNav from "../constant/nav";
+import Footer from "../constant/footer";
 
 function HomePage() {
   return (
@@ -7,13 +8,27 @@ function HomePage() {
       <HeaderNav />
 
       {/* HERO */}
-      <section className="min-h-screen flex items-center justify-center px-6">
-        <div className="max-w-4xl text-center flex flex-col items-center">
+      <section className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
+        {/* Background Video */}
+        <video
+          className="absolute top-0 left-0 w-full h-full object-cover z-0"
+          src="/video/westernshot.mp4"
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
+
+        {/* Optional: Dark Overlay to make text pop */}
+        <div className="absolute top-0 left-0 w-full h-full bg-black/40 z-10"></div>
+
+        {/* Content Layer */}
+        <div className="relative z-20 max-w-4xl text-center flex flex-col items-center text-white">
           <h1 className="text-5xl md:text-8xl font-semibold tracking-tight mb-6">
             Let’s Neko
           </h1>
 
-          <p className="text-base md:text-xl text-gray-400 max-w-2xl mb-10">
+          <p className="text-base md:text-xl text-gray-200 max-w-2xl mb-10">
             A curated portfolio platform showcasing musicians and creatives
             shaping Texas culture and global influence.
           </p>
@@ -23,9 +38,9 @@ function HomePage() {
           </button>
 
           {/* Scroll indicator */}
-          <div className="mt-10 flex flex-col items-center text-xs text-gray-500">
+          <div className="mt-10 flex flex-col items-center text-xs text-gray-300">
             <span className="mb-2 tracking-widest uppercase">Scroll</span>
-            <div className="w-px h-12 bg-gray-500/60 animate-pulse"></div>
+            <div className="w-px h-12 bg-white/60 animate-pulse"></div>
           </div>
         </div>
       </section>
@@ -85,6 +100,7 @@ function HomePage() {
           </div>
         </div>
       </section>
+      <Footer></Footer>
     </section>
   );
 }
