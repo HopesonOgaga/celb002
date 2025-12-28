@@ -1,6 +1,8 @@
 import React from "react";
 import HeaderNav from "../constant/nav";
 import Footer from "../constant/footer";
+import CelebritySection from "../constant/celeb";
+
 
 function HomePage() {
   return (
@@ -100,6 +102,54 @@ function HomePage() {
           </div>
         </div>
       </section>
+      {/* section */}
+      <section className="bg-black text-white py-20 px-6 md:px-24">
+        <div className="max-w-7xl mx-auto text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-semibold mb-4">
+            What We Offer
+          </h2>
+          <p className="text-gray-400 max-w-2xl mx-auto">
+            At Let’s Neko, we provide end-to-end artist management for Texas
+            musicians and creatives. Our services include brand development,
+            career strategy, promotional campaigns, media partnerships, and
+            curated opportunities to connect talent with audiences. We focus on
+            amplifying identity, building visibility, and creating meaningful
+            cultural impact.
+          </p>
+        </div>
+
+        {/* Services Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-7xl mx-auto">
+          <div className="bg-gray-900/50 p-8 rounded-2xl hover:bg-gray-900/70 transition">
+            <h3 className="text-2xl font-semibold mb-3">Brand Development</h3>
+            <p className="text-gray-300">
+              Crafting a unique identity for each artist to stand out in the
+              industry and resonate with audiences.
+            </p>
+          </div>
+
+          <div className="bg-gray-900/50 p-8 rounded-2xl hover:bg-gray-900/70 transition">
+            <h3 className="text-2xl font-semibold mb-3">Career Strategy</h3>
+            <p className="text-gray-300">
+              Guiding artists through growth, planning releases, partnerships,
+              and long-term career milestones.
+            </p>
+          </div>
+
+          <div className="bg-gray-900/50 p-8 rounded-2xl hover:bg-gray-900/70 transition">
+            <h3 className="text-2xl font-semibold mb-3">
+              Promotions & Partnerships
+            </h3>
+            <p className="text-gray-300">
+              Amplifying reach with media campaigns, collaborations, and curated
+              opportunities to connect with audiences.
+            </p>
+          </div>
+        </div>
+      </section>
+      {/* celebrity section */}
+      <CelebritySection></CelebritySection>
+
       <Footer></Footer>
     </section>
   );

@@ -26,9 +26,7 @@ function Footer() {
               <li className="hover:text-white transition cursor-pointer">
                 Home
               </li>
-              <li className="hover:text-white transition cursor-pointer">
-                Roster
-              </li>
+             
               <li className="hover:text-white transition cursor-pointer">
                 About
               </li>
@@ -39,22 +37,9 @@ function Footer() {
           </div>
 
           {/* Contact */}
-          <div>
-            <h4 className="text-sm uppercase tracking-widest text-gray-500 mb-4">
-              Connect
-            </h4>
-            <ul className="space-y-3 text-gray-400">
-              <li className="hover:text-white transition cursor-pointer">
-                Booking
-              </li>
-              <li className="hover:text-white transition cursor-pointer">
-                Artist Submissions
-              </li>
-              <li className="hover:text-white transition cursor-pointer">
-                Partnerships
-              </li>
-            </ul>
-          </div>
+          {/* <div>
+          
+          </div> */}
         </div>
 
         {/* Bottom */}

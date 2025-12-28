@@ -13,20 +13,20 @@ export default function HeaderNav() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-8">
-          <a href="#about" className="text-gray-700 hover:text-green-600 transition">
+          <a href="#about" className="text-gray-700 hover:text-gray-600 transition">
             About
           </a>
-          <a href="#portfolio" className="text-gray-700 hover:text-green-600 transition">
+          <a href="#portfolio" className="text-gray-700 hover:text-gray-600 transition">
             Portfolio
           </a>
-          <a href="#services" className="text-gray-700 hover:text-green-600 transition">
+          <a href="#services" className="text-gray-700 hover:text-gray-600 transition">
             Services
           </a>
         </nav>
 
         {/* CTA Button (Desktop) */}
         <div className="hidden md:block">
-          <button className="bg-green-600 text-white font-semibold rounded-full px-6 py-2 shadow-lg hover:bg-green-900 active:bg-green-950 transition">
+          <button className="bg-gray-600  cursor-pointer text-white font-semibold rounded-md  px-6 py-2 shadow-lg hover:bg-gray-900 active:bg-gray-950 transition">
             Book a Call
           </button>
         </div>
@@ -57,16 +57,16 @@ export default function HeaderNav() {
         }`}
       >
         <nav className="flex flex-col gap-4 p-4 bg-white">
-          <a href="#about" className="text-gray-700 hover:text-green-600 transition">
+          <a href="#about" className="text-gray-700 hover:text-gray-600 transition">
             About
           </a>
-          <a href="#portfolio" className="text-gray-700 hover:text-green-600 transition">
+          <a href="#portfolio" className="text-gray-700 hover:text-gray-600 transition">
             Portfolio
           </a>
-          <a href="#services" className="text-gray-700 hover:text-green-600 transition">
+          <a href="#services" className="text-gray-700 hover:text-gray-600 transition">
             Services
           </a>
-          <button className="bg-green-600 text-white font-semibold rounded-full px-6 py-2 shadow-lg hover:bg-green-900 active:bg-green-950 transition">
+          <button className="bg-gray-600 text-white font-semibold rounded-full px-6 py-2 shadow-lg hover:bg-gray-900 active:bg-gray-950 transition">
             Book a Call
           </button>
         </nav>
