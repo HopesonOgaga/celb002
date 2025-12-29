@@ -2,12 +2,12 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const CELEBRITIES = [
-  { id: 1, name: "Keith Urban ", role: "Vocalist", img: "/images/artist1.jpg" },
-  { id: 2, name: "Kenny Chesney ", role: "Producer", img: "/images/artist2.jpg" },
-  { id: 3, name: "George Strait ", role: "Multi-Instrumentalist", img: "/images/artist3.jpg" },
-  { id: 4, name: "Tim Mcgraw", role: "Songwriter", img: "/images/artist4.jpg" },
- { id: 5, name: "Jason Aldean ", role: "Vocalist", img: "/images/artist1.jpg" },
- { id: 6, name: "Luke Bryan", role: "Vocalist", img: "/images/artist1.jpg" },
+  { id: 1, name: "Keith Urban ", role: "Vocalist", img: "/images/celebs/keith.jpeg" },
+  { id: 2, name: "Kenny Chesney ", role: "vocalist", img: "/images/kenny/kenyy.jpeg" },
+  { id: 3, name: "George Strait ", role: "songwriter", img: "/images/george/george.jpeg" },
+  { id: 4, name: "Tim Mcgraw", role: "Songwriter", img: "/images/tim/tim.jpeg" },
+ { id: 5, name: "Jason Aldean ", role: "Vocalist", img: "/images/jason/jason.jpeg" },
+ { id: 6, name: "Luke Bryan", role: "Vocalist", img: "/images/luke/luke.jpeg" },
 ];
 
 const CelebritySection = () => {
