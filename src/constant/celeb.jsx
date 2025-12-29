@@ -63,7 +63,7 @@ const CelebritySection = () => {
                 {/* Modern CTA inside card */}
                 <div className="h-[1px] w-0 bg-white transition-all duration-500 group-hover:w-full" />
                 <button className="mt-4 text-[10px] uppercase tracking-widest text-white opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                  View Profile →
+                
                 </button>
               </div>
             </motion.div>
