@@ -39,9 +39,12 @@ export default function HeaderNav() {
 
         {/* CTA Button (Desktop) */}
         <div className="hidden md:block">
-          <button className="bg-gray-600  cursor-pointer text-white font-semibold rounded-md  px-6 py-2 shadow-lg hover:bg-gray-900 active:bg-gray-950 transition">
-            Book a Call
-          </button>
+          <a href="#service">
+            {" "}
+            <button className="bg-gray-600 text-white font-semibold rounded-full px-6 py-2 shadow-lg hover:bg-gray-900 active:bg-gray-950 transition">
+              Book a Call
+            </button>
+          </a>
         </div>
 
         {/* Mobile Hamburger */}
@@ -108,9 +111,12 @@ export default function HeaderNav() {
           >
             Services
           </a>
-          <button className="bg-gray-600 text-white font-semibold rounded-full px-6 py-2 shadow-lg hover:bg-gray-900 active:bg-gray-950 transition">
-            Book a Call
-          </button>
+          <a href="#service">
+            {" "}
+            <button className="bg-gray-600 text-white font-semibold rounded-full px-6 py-2 shadow-lg hover:bg-gray-900 active:bg-gray-950 transition">
+              Book a Call
+            </button>
+          </a>
         </nav>
       </div>
     </header>
