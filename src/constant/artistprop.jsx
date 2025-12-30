@@ -1,4 +1,6 @@
 import React from "react";
+// 1. IMPORT the chatbot component here
+import ArtistChat from "../assets/artistvhat.jsx";
 
 const SectionTitle = ({ children, className = "" }) => (
   <h2 className={`text-3xl md:text-5xl font-bold mb-8 tracking-tight ${className}`}>
@@ -73,6 +75,10 @@ const ArtistProfile = ({ data }) => {
         </div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-blue-500/10 blur-[120px] rounded-full" />
       </section>
+
+      {/* 2. PLACE THE CHATBOT HERE */}
+      <ArtistChat artistName={data.name} />
+
     </div>
   );
 };
