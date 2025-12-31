@@ -9,10 +9,7 @@ export default function HeaderNav() {
       <div className="max-w-7xl mx-auto flex justify-between items-center p-4">
         {/* Logo */}
         <div>
-          <Link href="/">
-            {" "}
-            <h1 className="font-bold text-2xl text-gray-800">Neko Art</h1>
-          </Link>
+            <a href="/"><h1 className="font-bold text-2xl text-gray-800 cursor-pointer">Neko Art</h1></a>
         </div>
 
         {/* Desktop Navigation */}

@@ -1,7 +1,7 @@
 export const ARTIST_DATA = {
   aldean: {
     name: "Jason Aldean",
-    heroImage: "/images/aldean-hero.jpg",
+    heroImage: "/images/Jason Aldean.jpg",
     subtitle: "The King of the Roadhouse",
     about: "The Georgia native who redefined modern country by blending hard-hitting rock energy with small-town storytelling. With over 27 No. 1 singles, he remains a steadfast voice of the American heartland.",
     highlights: [
@@ -18,7 +18,7 @@ export const ARTIST_DATA = {
   },
   bryan: {
     name: "Luke Bryan",
-    heroImage: "/images/luke-hero.jpg",
+    heroImage: "/images/lukebran.jpg",
     subtitle: "Country Music's Ultimate Entertainer",
     about: "From the peanut farms of Georgia to the bright lights of American Idol, Luke Bryan has become the face of modern country party anthems and heartfelt ballads.",
     highlights: [
@@ -35,7 +35,7 @@ export const ARTIST_DATA = {
   },
   strait: {
     name: "George Strait",
-    heroImage: "/images/strait-hero.jpg",
+    heroImage: "/images/georgewall.jpg",
     subtitle: "The King of Country Music",
     about: "The undeniable 'King,' George Strait has stayed true to the traditional neotraditionalist sound for over four decades, setting records that may never be broken.",
     highlights: [
@@ -52,7 +52,7 @@ export const ARTIST_DATA = {
   },
   mcgraw: {
     name: "Tim McGraw",
-    heroImage: "/images/mcgraw-hero.jpg",
+    heroImage: "/images/timwall.jpg",
     subtitle: "A Legacy of Grit and Grace",
     about: "One of the most successful 'Young Country' stars of the 90s, Tim McGraw has evolved into a global icon, actor, and philanthropist with a voice that defines a generation.",
     highlights: [
@@ -69,7 +69,7 @@ export const ARTIST_DATA = {
   },
   urban: {
     name: "Keith Urban",
-    heroImage: "/images/keith-hero.jpg",
+    heroImage: "/images/KeithUrban.jpg",
     subtitle: "The Virtuoso Guitarist",
     about: "Hailing from Australia, Keith Urban brought a guitar-shredding sensibility to Nashville, blending country-pop with incredible musicianship and infectious optimism.",
     highlights: [

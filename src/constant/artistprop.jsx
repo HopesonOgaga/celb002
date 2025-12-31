@@ -1,6 +1,8 @@
 import React from "react";
 // 1. IMPORT the chatbot component here
 import ArtistChat from "../assets/artistvhat.jsx";
+import Footer from "./footer.jsx";
+import HeaderNav from "./nav.jsx";
 
 const SectionTitle = ({ children, className = "" }) => (
   <h2 className={`text-3xl md:text-5xl font-bold mb-8 tracking-tight ${className}`}>
@@ -12,14 +14,16 @@ const ArtistProfile = ({ data }) => {
   if (!data) return <div className="text-white p-10">Artist not found.</div>;
 
   return (
-    <div className="text-slate-100 bg-black font-sans selection:bg-blue-500/30">
+    <>
+    <HeaderNav></HeaderNav>
+     <div className="text-slate-100 bg-black font-sans selection:bg-blue-500/30">
       {/* HERO SECTION */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/40 z-10" />
         <img
           src={data.heroImage}
           alt={data.name}
-          className="absolute inset-0 w-full h-full object-cover scale-105 opacity-60"
+          className="absolute inset-0 w-full h-[100vh] object-fit scale-95 opacity-60"
         />
         
         <div className="relative text-center px-6 max-w-4xl z-20">
@@ -80,6 +84,8 @@ const ArtistProfile = ({ data }) => {
       <ArtistChat artistName={data.name} />
 
     </div>
+    <Footer></Footer>
+    </>
   );
 };
 
