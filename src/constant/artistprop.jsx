@@ -23,7 +23,7 @@ const ArtistProfile = ({ data }) => {
         <img
           src={data.heroImage}
           alt={data.name}
-          className="absolute inset-0 w-full h-[100vh] object-fit scale-95 opacity-60"
+          className="absolute inset-0 w-full h-[100vh] object-fit scale-100 opacity-60"
         />
         
         <div className="relative text-center px-6 max-w-4xl z-20">

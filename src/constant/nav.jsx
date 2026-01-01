@@ -9,7 +9,7 @@ export default function HeaderNav() {
       <div className="max-w-7xl mx-auto flex justify-between items-center p-4">
         {/* Logo */}
         <div>
-            <a href="/"><h1 className="font-bold text-2xl text-gray-800 cursor-pointer uppercase">Creative artist spot</h1></a>
+            <a href="/"><h1 className="font-bold text-sm md:text-2xl text-gray-800 cursor-pointer uppercase">Creative artists spot</h1></a>
         </div>
 
         {/* Desktop Navigation */}
@@ -35,14 +35,7 @@ export default function HeaderNav() {
         </nav>
 
         {/* CTA Button (Desktop) */}
-        <div className="hidden md:block">
-          <a href="#service">
-            {" "}
-            <button className="bg-gray-600 text-white font-semibold rounded-full px-6 py-2 shadow-lg hover:bg-gray-900 active:bg-gray-950 transition">
-              Book a Call
-            </button>
-          </a>
-        </div>
+       
 
         {/* Mobile Hamburger */}
         <div className="md:hidden">
@@ -108,12 +101,7 @@ export default function HeaderNav() {
           >
             Services
           </a>
-          <a href="#service">
-            {" "}
-            <button className="bg-gray-600 text-white font-semibold rounded-full px-6 py-2 shadow-lg hover:bg-gray-900 active:bg-gray-950 transition">
-              Book a Call
-            </button>
-          </a>
+        
         </nav>
       </div>
     </header>
