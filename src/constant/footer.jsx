@@ -10,7 +10,7 @@ function Footer() {
 
           {/* Brand */}
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-semibold mb-4">Let’s Neko</h3>
+            <h3 className="text-2xl font-semibold mb-4">Creative artist spot</h3>
             <p className="text-gray-400 max-w-md leading-relaxed">
               A curated portfolio platform spotlighting musicians and creatives
               shaping Texas culture and global influence.
@@ -45,10 +45,10 @@ function Footer() {
         {/* Bottom */}
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between text-sm text-gray-500">
           <p>
-            © {new Date().getFullYear()} Let’s Neko. All rights reserved.
+            © {new Date().getFullYear()} Creative artist spot All rights reserved.
           </p>
 
-          <div className="flex items-center gap-6 mt-4 md:mt-0">
+          {/* <div className="flex items-center gap-6 mt-4 md:mt-0">
             <span className="hover:text-white transition cursor-pointer">
               Instagram
             </span>
@@ -58,7 +58,7 @@ function Footer() {
             <span className="hover:text-white transition cursor-pointer">
               YouTube
             </span>
-          </div>
+          </div> */}
         </div>
 
       </div>

@@ -26,8 +26,8 @@ function HomePage() {
 
         {/* Content Layer */}
         <div className="relative z-20 max-w-4xl text-center flex flex-col items-center text-white">
-          <h1 className="text-5xl md:text-8xl font-semibold tracking-tight mb-6">
-            Let’s Neko
+          <h1 className="text-5xl md:text-8xl font-semibold tracking-tight mb-6 capitalize">
+            Creative artist spot
           </h1>
 
           <p className="text-base md:text-xl text-gray-200 max-w-2xl mb-10">
@@ -66,7 +66,7 @@ function HomePage() {
             </h2>
 
             <p className="text-gray-400 text-lg leading-relaxed max-w-xl mb-10">
-              Let’s Neko is a modern portfolio and management platform focused
+              Creative artist spot is a modern portfolio and management platform focused
               on visibility, identity, and growth. We spotlight artists with
               clear vision and cultural relevance, connecting talent to
               meaningful opportunities across media and industry.
@@ -112,7 +112,7 @@ function HomePage() {
             What We Offer
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            At Let’s Neko, we provide end-to-end artist management for Texas
+            At Creative artist spot, we provide end-to-end artist management for Texas
             musicians and creatives. Our services include brand development,
             career strategy, promotional campaigns, media partnerships, and
             curated opportunities to connect talent with audiences. We focus on
