@@ -8,6 +8,7 @@ import { ARTIST_DATA } from "./constant/artistdata";
 function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop></ScrollToTop>
       <Routes>
         <Route path="/" element={<HomePage />} />
 
@@ -22,6 +23,7 @@ function App() {
 }
 
 import { useParams } from "react-router-dom";
+import ScrollToTop from "./assets/scroll";
 
 function ArtistWrapper() {
   const { artistId } = useParams();

@@ -14,7 +14,7 @@ function HomePage() {
         <video
           className="absolute top-0 left-0 w-full h-full object-cover z-0"
           src="/video/westernshot.mp4"
-          type="video/mp4"
+          type="video/mp4"WD
           autoPlay
           loop
           muted
