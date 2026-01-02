@@ -7,7 +7,7 @@ const ArtistChat = ({ artistName }) => {
   // Data for the agents (You can change these to real numbers/emails)
   const contactInfo = {
     phone: "+1 (800) 555-0199",
-    email: `support@${artistName.toLowerCase().replace(/\s/g, '')}tour.com`,
+    email: `Support@Creativeartistspot.com`,
     hours: "9 AM - 5 PM CST"
   };
 
@@ -55,7 +55,7 @@ const ArtistChat = ({ artistName }) => {
                 </p>
                 
                 {/* Phone */}
-                <a href={`tel:${contactInfo.phone}`} className="flex items-center justify-between p-4 bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 rounded-xl transition-colors group">
+                {/* <a href={`tel:${contactInfo.phone}`} className="flex items-center justify-between p-4 bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 rounded-xl transition-colors group">
                   <div className="flex items-center gap-3">
                     <span className="text-xl">📞</span>
                     <div>
@@ -64,7 +64,7 @@ const ArtistChat = ({ artistName }) => {
                     </div>
                   </div>
                   <span className="text-blue-500 group-hover:translate-x-1 transition-transform">→</span>
-                </a>
+                </a> */}
 
                 {/* Email */}
                 <a href={`mailto:${contactInfo.email}`} className="flex items-center justify-between p-4 bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 rounded-xl transition-colors group">
