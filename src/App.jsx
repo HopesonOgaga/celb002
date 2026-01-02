@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom"; // Note: ensure it's react-router-dom
 import HomePage from "./pages";
-import Kenny from "./pages/kenny";
 import ArtistProfile from "./constant/artistprop";
 import { ARTIST_DATA } from "./constant/artistdata";
 
@@ -11,9 +10,6 @@ function App() {
     <ScrollToTop></ScrollToTop>
       <Routes>
         <Route path="/" element={<HomePage />} />
-
-        {/* Static route for Kenny if you want to keep his custom file */}
-        <Route path="/kenny" element={<Kenny />} />
 
         {/* Dynamic route for all other artists */}
         <Route path="/artist/:artistId" element={<ArtistWrapper />} />

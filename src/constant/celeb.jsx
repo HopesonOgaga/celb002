@@ -36,7 +36,8 @@ const CelebritySection = () => {
           {CELEBRITIES.map((person, index) => (
             <Link 
               key={person.id} 
-              to={person.slug === "kenny" ? "/kenny" : `/artist/${person.slug}`}
+              to={`/artist/${person.slug}`}
+
             >
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
