@@ -30,14 +30,14 @@ function HomePage() {
             
           </h1>
 
-          <p className="text-base md:text-xl text-gray-200 max-w-2xl mb-10">
+          <p className="text-base md:text-4xl md:font-bold  text-gray-200 max-w-2xl mb-10 leading-relaxed"> 
             A curated portfolio platform showcasing musicians and creatives
             shaping Texas culture and global influence.
           </p>
 
-          <button className="px-8 py-3 rounded-full bg-white text-black font-medium hover:scale-105 transition cursor-pointer">
+          {/* <button className="px-8 py-3 rounded-full bg-white text-black font-medium hover:scale-105 transition cursor-pointer">
             Explore Portfolio
-          </button>
+          </button> */}
 
           {/* Scroll indicator */}
           <div className="mt-10 flex flex-col items-center text-xs text-gray-300">
@@ -72,9 +72,9 @@ function HomePage() {
               meaningful opportunities across media and industry.
             </p>
 
-            <button className="w-fit px-7 py-3 rounded-full border border-white/30 hover:bg-white hover:text-black transition">
+            {/* <button className="w-fit px-7 py-3 rounded-full border border-white/30 hover:bg-white hover:text-black transition">
               View Roster
-            </button>
+            </button> */}
           </div>
 
           {/* VISUAL COLLAGE */}
