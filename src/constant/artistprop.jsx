@@ -81,7 +81,7 @@ const ArtistProfile = ({ data }) => {
       </section>
 
       {/* 2. PLACE THE CHATBOT HERE */}
-      <ArtistChat artistName={data.name} />
+      <ArtistChat artist={data} />
 
     </div>
     <Footer></Footer>

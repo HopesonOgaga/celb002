@@ -1,5 +1,6 @@
 export const ARTIST_DATA = {
   aldean: {
+     id: "aldean", 
     name: "Jason Aldean",
     heroImage: "/images/Jason Aldean.jpg",
     subtitle: "The King of the Roadhouse",
@@ -26,6 +27,7 @@ export const ARTIST_DATA = {
     },
   },
   bryan: {
+    id: "bryan",
     name: "Luke Bryan",
     heroImage: "/images/lukebran.jpg",
     subtitle: "Country Music's Ultimate Entertainer",
@@ -52,6 +54,7 @@ export const ARTIST_DATA = {
     },
   },
   strait: {
+    id: "strait",
     name: "George Strait",
     heroImage: "/images/georgewall.jpg",
     subtitle: "The King of Country Music",
@@ -84,6 +87,7 @@ export const ARTIST_DATA = {
     },
   },
   mcgraw: {
+    id: "mcgraw",
     name: "Tim McGraw",
     heroImage: "/images/timwall.jpg",
     subtitle: "A Legacy of Grit and Grace",
@@ -110,6 +114,7 @@ export const ARTIST_DATA = {
     },
   },
   urban: {
+    id: "urban",
     name: "Keith Urban",
     heroImage: "/images/KeithUrban.jpg",
     subtitle: "The Virtuoso Guitarist",
@@ -136,6 +141,7 @@ export const ARTIST_DATA = {
     },
   },
   kenny: {
+    id: "kenny",
     name: "Kenny Chesney",
     heroImage: "/images/kennywall2.jpg",
     subtitle:
