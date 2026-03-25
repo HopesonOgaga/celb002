@@ -75,7 +75,7 @@ const CELEBRITIES = [
   },
     {
     id: 11,
-    name: "shanesmithmusic",
+    name: "shane smith music",
     role: "Vocalist",
     img: "/images/shane/shane (2).jpg",
     slug: "shane",
