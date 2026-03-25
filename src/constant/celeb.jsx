@@ -3,19 +3,89 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom"; // Import Link for navigation
 
 const CELEBRITIES = [
-  { id: 1, name: "Keith Urban", role: "Vocalist", img: "/images/celebs/keith.jpeg", slug: "urban" },
-  { id: 2, name: "Kenny Chesney", role: "Vocalist", img: "/images/kenny/kenyy.jpeg", slug: "kenny" },
-  { id: 3, name: "George Strait", role: "Songwriter", img: "/images/george/george.jpeg", slug: "strait" },
-  { id: 4, name: "Tim Mcgraw", role: "Songwriter", img: "/images/tim/tim.jpeg", slug: "mcgraw" },
-  { id: 5, name: "Jason Aldean", role: "Vocalist", img: "/images/jason/jason.jpeg", slug: "aldean" },
-  { id: 6, name: "Luke Bryan", role: "Vocalist", img: "/images/luke/luke.jpeg", slug: "bryan" },
+  {
+    id: 1,
+    name: "Keith Urban",
+    role: "Vocalist",
+    img: "/images/celebs/keith.jpeg",
+    slug: "urban",
+  },
+  {
+    id: 2,
+    name: "Kenny Chesney",
+    role: "Vocalist",
+    img: "/images/kenny/kenyy.jpeg",
+    slug: "kenny",
+  },
+  {
+    id: 3,
+    name: "George Strait",
+    role: "Songwriter",
+    img: "/images/george/george.jpeg",
+    slug: "strait",
+  },
+  {
+    id: 4,
+    name: "Tim Mcgraw",
+    role: "Songwriter",
+    img: "/images/tim/tim.jpeg",
+    slug: "mcgraw",
+  },
+  {
+    id: 5,
+    name: "Jason Aldean",
+    role: "Vocalist",
+    img: "/images/jason/jason.jpeg",
+    slug: "aldean",
+  },
+  {
+    id: 6,
+    name: "Luke Bryan",
+    role: "Vocalist",
+    img: "/images/luke/luke.jpeg",
+    slug: "bryan",
+  },
+  {
+    id: 7,
+    name: "keo weztel",
+    role: "musician/band",
+    img: "/images/houston/weztel (1).jpg",
+    slug: "keo",
+  },
+  {
+    id: 8,
+    name: "Pecos & the Rooftops",
+    role: "Vocalist",
+    img: "/images/pecos/pecos (1).jpg",
+    slug: "pecos",
+  },
+  {
+    id: 9,
+    name: "Mark harmon",
+    role: "Vocalist",
+    img: "/images/mark/mark (1).jpg",
+    slug: "mark",
+  },
+  {
+    id: 10,
+    name: "Luke Bryan",
+    role: "Vocalist",
+    img: "/images/luke/luke.jpeg",
+    slug: "bryan",
+  },
+    {
+    id: 11,
+    name: "shanesmithmusic",
+    role: "Vocalist",
+    img: "/images/shane/shane (2).jpg",
+    slug: "shane",
+  },
 ];
 
 const CelebritySection = () => {
   return (
     <section className="bg-black py-24 px-6 overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        
         {/* Modern Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
           <div className="max-w-xl">
@@ -34,11 +104,7 @@ const CelebritySection = () => {
         {/* Grid Layout */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {CELEBRITIES.map((person, index) => (
-            <Link 
-              key={person.id} 
-              to={`/artist/${person.slug}`}
-
-            >
+            <Link key={person.id} to={`/artist/${person.slug}`}>
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -64,10 +130,10 @@ const CelebritySection = () => {
                   <h4 className="text-3xl font-bold text-white mb-4">
                     {person.name}
                   </h4>
-                  
+
                   {/* Decorative Line */}
                   <div className="h-[1px] w-0 bg-blue-500 transition-all duration-500 group-hover:w-full" />
-                  
+
                   <p className="mt-4 text-[10px] uppercase tracking-widest text-white opacity-0 transition-opacity duration-500 group-hover:opacity-100 font-semibold">
                     View Profile —
                   </p>

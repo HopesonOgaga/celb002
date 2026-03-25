@@ -170,4 +170,157 @@ export const ARTIST_DATA = {
         "A lifestyle-driven fan movement celebrating freedom, music, and living life barefoot wherever the road leads.",
     },
   },
+  keo: {
+  id: "keo",
+  name: "Keo Weztel",
+  heroImage: "/images/houston/weztel (2).jpg",
+  subtitle: "Musician / Band",
+
+  about:
+    "Keo Weztel is an emerging force blending alternative sounds with raw, expressive storytelling. Known for pushing boundaries and experimenting with sound, Keo represents a new wave of artists focused on authenticity, emotion, and creative freedom.",
+
+  highlights: [
+    { icon: "🎶", text: "Rising independent artist" },
+    { icon: "🔥", text: "Known for genre-blending sound" },
+    { icon: "🎤", text: "Energetic and immersive performances" },
+    { icon: "🌍", text: "Building a global underground fanbase" },
+    { icon: "🎧", text: "Self-produced and creatively driven" },
+    { icon: "🚀", text: "Part of the next wave of modern music" },
+  ],
+
+  albums: [
+    "Weztel Origins",
+    "Midnight Frequencies",
+    "Echoes & Energy",
+    "Sound of Motion",
+    "Unfiltered",
+    "Beyond The Noise",
+  ],
+
+  movement: {
+    name: "Weztel Wave",
+    description:
+      "A growing community centered around creativity, individuality, and freedom of expression. The Weztel Wave represents those who move differently, think differently, and create without limits.",
+  },
+},
+  pecos: {
+    id: "PecostheRooftops",
+    name: "Pecos & the Rooftops",
+    heroImage: "/images/kennywall2.jpg",
+    subtitle:
+      "The soundtrack of freedom, open roads, beach nights, and unforgettable summers.",
+    about:
+      "Kenny Chesney is an unmistakable sense of freedom. Across decades, he has built a career defined by authenticity and connection. Whether blending country with rock energy or island-inspired sounds, Kenny’s music feels personal, emotional, and timeless.",
+    highlights: [
+      { icon: "🏆", text: "Multiple CMA & ACM Award winner" },
+      { icon: "🎵", text: "Over 30 million albums sold worldwide" },
+      { icon: "📀", text: "Numerous Billboard No.1 albums" },
+      { icon: "🎤", text: "Highest-grossing touring artists" },
+      { icon: "🏟", text: "Record-breaking stadium tours" },
+      { icon: "🌴", text: "Creator of No Shoes Nation" },
+    ],
+    albums: [
+      "When the Sun Goes Down",
+      "The Road and the Radio",
+      "Just Who I Am",
+      "Life On A Rock",
+      "Here and Now",
+      "Born",
+    ],
+    movement: {
+      name: "No Shoes Nation",
+      description:
+        "A lifestyle-driven fan movement celebrating freedom, music, and living life barefoot wherever the road leads.",
+    },
+  },
+mark: {
+    id: "mark",
+    name: "Mark harmon",
+    heroImage: "/images/mark/mark.webp",
+    subtitle:
+      "The soundtrack of freedom, open roads, beach nights, and unforgettable summers.",
+    about:
+      "Kenny Chesney is an unmistakable sense of freedom. Across decades, he has built a career defined by authenticity and connection. Whether blending country with rock energy or island-inspired sounds, Kenny’s music feels personal, emotional, and timeless.",
+    highlights: [
+      { icon: "🏆", text: "Multiple CMA & ACM Award winner" },
+      { icon: "🎵", text: "Over 30 million albums sold worldwide" },
+      { icon: "📀", text: "Numerous Billboard No.1 albums" },
+      { icon: "🎤", text: "Highest-grossing touring artists" },
+      { icon: "🏟", text: "Record-breaking stadium tours" },
+      { icon: "🌴", text: "Creator of No Shoes Nation" },
+    ],
+    albums: [
+      "When the Sun Goes Down",
+      "The Road and the Radio",
+      "Just Who I Am",
+      "Life On A Rock",
+      "Here and Now",
+      "Born",
+    ],
+    movement: {
+      name: "No Shoes Nation",
+      description:
+        "A lifestyle-driven fan movement celebrating freedom, music, and living life barefoot wherever the road leads.",
+    },
+  },
+  shane: {
+    id: "shane",
+    name: "ShaneSmith",
+    heroImage: "/images/shane/shane.jpg",
+    subtitle:
+      "The soundtrack of freedom, open roads, beach nights, and unforgettable summers.",
+    about:
+      "Kenny Chesney is an unmistakable sense of freedom. Across decades, he has built a career defined by authenticity and connection. Whether blending country with rock energy or island-inspired sounds, Kenny’s music feels personal, emotional, and timeless.",
+    highlights: [
+      { icon: "🏆", text: "Multiple CMA & ACM Award winner" },
+      { icon: "🎵", text: "Over 30 million albums sold worldwide" },
+      { icon: "📀", text: "Numerous Billboard No.1 albums" },
+      { icon: "🎤", text: "Highest-grossing touring artists" },
+      { icon: "🏟", text: "Record-breaking stadium tours" },
+      { icon: "🌴", text: "Creator of No Shoes Nation" },
+    ],
+    albums: [
+      "When the Sun Goes Down",
+      "The Road and the Radio",
+      "Just Who I Am",
+      "Life On A Rock",
+      "Here and Now",
+      "Born",
+    ],
+    movement: {
+      name: "No Shoes Nation",
+      description:
+        "A lifestyle-driven fan movement celebrating freedom, music, and living life barefoot wherever the road leads.",
+    },
+  },
+  koe: {
+    id: "koe",
+    name: "koe weztel",
+    heroImage: "/images/kennywall2.jpg",
+    subtitle:
+      "The soundtrack of freedom, open roads, beach nights, and unforgettable summers.",
+    about:
+      "Kenny Chesney is an unmistakable sense of freedom. Across decades, he has built a career defined by authenticity and connection. Whether blending country with rock energy or island-inspired sounds, Kenny’s music feels personal, emotional, and timeless.",
+    highlights: [
+      { icon: "🏆", text: "Multiple CMA & ACM Award winner" },
+      { icon: "🎵", text: "Over 30 million albums sold worldwide" },
+      { icon: "📀", text: "Numerous Billboard No.1 albums" },
+      { icon: "🎤", text: "Highest-grossing touring artists" },
+      { icon: "🏟", text: "Record-breaking stadium tours" },
+      { icon: "🌴", text: "Creator of No Shoes Nation"},
+    ],
+    albums: [
+      "When the Sun Goes Down",
+      "The Road and the Radio",
+      "Just Who I Am",
+      "Life On A Rock", 
+      "Here and Now",
+      "Born",
+    ],
+    movement: {
+      name: "No Shoes Nation",
+      description:
+        "A lifestyle-driven fan movement celebrating freedom, music, and living life barefoot wherever the road leads.",
+    },
+  },
 };

@@ -1,5 +1,4 @@
 import React from "react";
-// 1. IMPORT the chatbot component here
 import ArtistChat from "../assets/artistvhat.jsx";
 import Footer from "./footer.jsx";
 import HeaderNav from "./nav.jsx";
