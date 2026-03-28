@@ -133,16 +133,31 @@ const ArtistChat = ({ artist }) => {
     inputRef.current?.focus();
   };
 
-  // 🎟️ Ticket Selection
-  const handleTicketSelect = async (ticketType) => {
+  // 🎟️ Action Selection
+  const handleActionSelect = async (action) => {
     if (!currentUser) return;
     const targetSession =
       isAdmin && selectedSession ? selectedSession : currentUser.uid;
 
+    const userMessages = {
+      tickets: "🎟️ I'd like to get tickets.",
+      reservation: "📅 I'd like to book a reservation.",
+      camcard: "🎥 I'd like to get a Cam Card.",
+    };
+
+    const adminReplies = {
+      tickets:
+        "Thanks for your interest in tickets! Please reach out to our admin directly and they'll get you sorted with all the details and pricing. 🎟️",
+      reservation:
+        "Great choice! To complete your reservation, please contact our admin who will guide you through availability and next steps. 📅",
+      camcard:
+        "Awesome! For Cam Card inquiries, our admin will provide you with full details on how to get yours. Please hold. 🎥",
+    };
+
     await addDoc(collection(db, "artistChats", artist.id, "messages"), {
       sessionId: targetSession,
       role: "user",
-      text: `🎟️ I'd like more info on the ${ticketType}.`,
+      text: userMessages[action],
       type: "text",
       seen: false,
       createdAt: serverTimestamp(),
@@ -151,7 +166,7 @@ const ArtistChat = ({ artist }) => {
     await addDoc(collection(db, "artistChats", artist.id, "messages"), {
       sessionId: targetSession,
       role: "ai",
-      text: "Thanks for your decision, an admin will contact you shortly.",
+      text: adminReplies[action],
       type: "text",
       seen: false,
       createdAt: serverTimestamp(),
@@ -398,22 +413,23 @@ const ArtistChat = ({ artist }) => {
         )}
       </div>
 
-      {/* ── Ticket Chips ───────────────────────────── */}
+      {/* ── Action Chips ───────────────────────────── */}
       {!isAdmin && (
         <div
-          className="shrink-0 px-3 pb-2 flex gap-2 overflow-x-auto"
+          className="shrink-0 px-3 pb-2 pt-1 flex gap-2 overflow-x-auto"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
           {[
-            { label: "🎟️ VIP ($150)", value: "VIP Ticket ($150)" },
-            { label: "🎟️ General ($50)", value: "General Admission ($50)" },
-          ].map((t) => (
+            { label: "🎟️ Get Tickets",      key: "tickets"     },
+            { label: "📅 Book Reservation",  key: "reservation" },
+            { label: "🎥 Get Cam Card",      key: "camcard"     },
+          ].map((a) => (
             <button
-              key={t.value}
-              onClick={() => handleTicketSelect(t.value)}
-              className="shrink-0 text-xs bg-zinc-800 active:bg-zinc-600 hover:bg-zinc-700 transition-colors text-white px-3 py-2 rounded-full border border-zinc-700 touch-manipulation"
+              key={a.key}
+              onClick={() => handleActionSelect(a.key)}
+              className="shrink-0 text-xs bg-zinc-800 active:bg-zinc-600 hover:bg-zinc-700 transition-colors text-white px-3 py-2 rounded-full border border-zinc-700 touch-manipulation whitespace-nowrap"
             >
-              {t.label}
+              {a.label}
             </button>
           ))}
         </div>
