@@ -142,17 +142,17 @@ const ArtistChat = ({ artist }) => {
     const userMessages = {
       tickets: "🎟️ I'd like to get tickets.",
       reservation: "📅 I'd like to book a reservation.",
-      camcard: "🎥 I'd like to get a Cam Card.",
+      fancard: "🎥 I'd like to get a Fan Card.",
     };
 
-    const adminReplies = {
-      tickets:
-        "Thanks for your interest in tickets! Please reach out to our admin directly and they'll get you sorted with all the details and pricing. 🎟️",
-      reservation:
-        "Great choice! To complete your reservation, please contact our admin who will guide you through availability and next steps. 📅",
-      camcard:
-        "Awesome! For Cam Card inquiries, our admin will provide you with full details on how to get yours. Please hold. 🎥",
-    };
+   const adminReplies = {
+  tickets:
+    "Thanks for your interest in tickets! An admin will reach out to you shortly with all the details and pricing. 🎟️",
+  reservation:
+    "Great choice! An admin will reach out soon to guide you through availability and complete your reservation. 📅",
+  fancard:
+    "Awesome! An admin will reach out shortly with full details on how to get your Fan Card. 🎥",
+};
 
     await addDoc(collection(db, "artistChats", artist.id, "messages"), {
       sessionId: targetSession,
@@ -422,7 +422,7 @@ const ArtistChat = ({ artist }) => {
           {[
             { label: "🎟️ Get Tickets",      key: "tickets"     },
             { label: "📅 Book Reservation",  key: "reservation" },
-            { label: "🎥 Get Cam Card",      key: "camcard"     },
+            { label: "🎥 Get Fan Card",      key: "fancard"     },
           ].map((a) => (
             <button
               key={a.key}
